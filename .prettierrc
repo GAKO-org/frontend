@@ -1,0 +1,33 @@
+{
+  "singleQuote": false,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@/Cabinet/recoil/(.*)$",
+    "^@/Cabinet/pages/(.*)$",
+    "^@/Cabinet/components/(.*)$",
+    "^@/Cabinet/assets/(.*)$",
+    "^@/Cabinet/types/(.*)$",
+    "^@/Cabinet/api/(.*)$",
+    "^@/Cabinet/hooks/(.*)$",
+    "^@/Cabinet/utils/(.*)$",
+    "^@/Cabinet/constants/(.*)$",
+    "^@/Presentation/recoil/(.*)$",
+    "^@/Presentation/pages/(.*)$",
+    "^@/Presentation/components/(.*)$",
+    "^@/Presentation/assets/(.*)$",
+    "^@/Presentation/types/(.*)$",
+    "^@/Presentation/api/(.*)$",
+    "^@/Presentation/hooks/(.*)$",
+    "^@/Presentation/utils/(.*)$",
+    "^@/Presentation/constants/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}
