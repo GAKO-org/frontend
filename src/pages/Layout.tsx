@@ -32,7 +32,6 @@ const Layout = () => {
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -45,7 +44,7 @@ const MainBox = styled.div`
   align-items: center;
   /* margin: 20px; */
   /* 나중에 빼기 -> 내부 요소가 100vh보다 커질떄 */
-  min-height: calc(100dvh - 100px);
+  min-height: calc(100dvh - 150px);
   height: auto;
   /* padding-bottom: 100px; */
 `;
