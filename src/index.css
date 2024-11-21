@@ -1,70 +1,108 @@
 /* 기본 브라우저 세팅값 */
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* white, gray, black */
+  --ref-white: #ffffff;
+  --ref-gray-100: #f5f5f5;
+  --ref-gray-200: #eeeeee;
+  --ref-gray-300: #d9d9d9;
+  --ref-gray-400: #bcbcbc;
+  --ref-gray-450: #8c8c8c;
+  --ref-gray-500: #7b7b7b;
+  --ref-gray-530: #505354;
+  --ref-gray-550: #3d3f40;
+  --ref-gray-600: #3c3c3c;
+  --ref-gray-700: #313233;
+  --ref-gray-800: #262626;
+  --ref-gray-900: #1f1f1f;
+  --ref-black: #181818;
+
+  /* red */
+  --ref-red-100: #ff4e4e;
+  --ref-red-200: #e54646;
+
+  /* orange */
+  --ref-orange-100: #ff8b5b;
+  --ref-orange-200: #ef8172;
+
+  /* yellow */
+  --ref-yellow: #ffc74c;
+
+  /* green */
+  --ref-green-100: #47ffa7;
+  --ref-green-200: #3fe596;
+  --ref-green-300: #00cec9;
+  --ref-green-400: #00c2ab;
+  --ref-green-500: #2f4f4f;
+
+  /* blue */
+  --ref-blue-100: #f5f7ff;
+  --ref-blue-150: #dce7fd;
+  --ref-blue-160: #91b5fa;
+  --ref-blue-200: #7ebffb;
+  --ref-blue-210: #74b9ff;
+  --ref-blue-230: #0984e3;
+  --ref-blue-250: #5278fd;
+  --ref-blue-300: #406ee4;
+  --ref-blue-400: #3f69fd;
+  --ref-blue-430: #2c5afd;
+  --ref-blue-450: #0d4c92;
+  --ref-blue-470: #26447e;
+  --ref-blue-500: #252526;
+
+  /* purple */
+  --ref-purple-100: #f9f6ff;
+  --ref-purple-200: #dfd0fe;
+  --ref-purple-300: #b18cff;
+  --ref-purple-350: #a29bfe;
+  --ref-purple-400: #a17bf3;
+  --ref-purple-500: #9747ff;
+  --ref-purple-600: #8337e5;
+  --ref-purple-650: #6931b2;
+  --ref-purple-690: #3c1c66;
+  --ref-purple-700: #252425;
+
+  --ref-transparent-purple-100: #b18cff5f;
+  --ref-transparent-purple-200: #b08cffe1;
+
+  /* pink */
+  --ref-pink-100: #f473b1;
+  --ref-pink-150: #ff4589;
+  --ref-pink-200: #d72766;
+
+  /* shadow color */
+  --ref-black-shadow-100: rgba(0, 0, 0, 0.1);
+  --ref-black-shadow-200: rgba(0, 0, 0, 0.25);
+  --ref-black-shadow-300: rgba(0, 0, 0, 0.4);
+  --ref-black-shadow-400: rgba(0, 0, 0, 0.8);
+
+  /* primary color  */
+  --main-color: var(--ref-green-500);
+
+  /* font variable */
+  --main-font: "Pretendard", sans-serif;
+  /* --building-font: "Do Hyeon", sans-serif; */
+
+  /* default setting */
+  font-family: "Pretendard", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --tw-content: "\f02b";
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+#root {
+  width: 100%;
+  height: 100%;
 }
 
+html,
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+@font-face {
+  font-family: "Pretendard";
+  src: url("./assets/fonts/Pretendard.ttf") format("truetype");
 }
